@@ -1,0 +1,68 @@
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+.logo{
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+.nav{
+   width: 40%; 
+   padding: 1;
+}
+.ul{
+    width: 50%;
+    margin-left: auto;
+}
+.herolmg{
+    height: 100px;
+    padding: 25%;
+}
+.content{
+    width: 100px;
+    margin: 0 auto;
+}
+.footer{
+    background-color: #0e0e0f;
+    padding: 10%;
+    display: inline-block;
+    vertical-align: top;
+}
+.Erin{
+    height: 100px;
+}
+.flex-container {
+    display: flex;    
+}
+div {
+    display: flex;
+    padding: 33%;
+    width: 50px;
+    height: 50px;
+    border: 15px solid ;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+  }
+body {
+    background-color: deeppink;
+  }
+.workGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px 100px;
+}
+@media only screen and (max-width: 600px){
+    flex-direction: row-reverse;
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "about"
+        "skills"
+        "work"
+        "contact"
+}
